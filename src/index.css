@@ -19,6 +19,8 @@
     --secondary-2: 256, 98%, 58%;
     --third-2: 194, 93%, 77%;
     --fourth-2: 336, 72%, 67%;
+
+    scroll-behavior: smooth;
   }
 
   .dark {
@@ -52,6 +54,7 @@
 @layer base {
   body {
     @apply bg-background text-neutral3;
+    scroll-behavior: smooth;
   }
 
   h1 {
@@ -77,4 +80,28 @@
   p {
     @apply font-montserrat
   }
+}
+
+.navbar a {
+  position: relative;
+  text-decoration: none;
+  color: #000;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar a::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: hsl(var(--secondary));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar a:hover::after {
+  transform: scaleX(1);
 }

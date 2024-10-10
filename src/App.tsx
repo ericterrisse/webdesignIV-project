@@ -1,15 +1,15 @@
-import Navbar from "./components/Navbar";
+import MainPage from "./components/MainPage";
+import Mission from "./components/Mission";
+import Project from "./components/Project";
+import Team from "./components/Team";
 
 const App = () => {
 	return (
-		<div>
-			<Navbar />
-			<p className="w-[300px]">
-				Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque, facilis
-				hic reprehenderit eligendi, quae autem cupiditate consequatur
-				repudiandae commodi doloribus porro! Facilis, asperiores? Impedit quasi
-				culpa hic et a iusto.
-			</p>
+		<div className="w-[70%] m-auto">
+			<MainPage />
+			<Project />
+			<Team />
+			<Mission />
 		</div>
 	);
 };
