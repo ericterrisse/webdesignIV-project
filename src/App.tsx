@@ -1,6 +1,9 @@
+import Navbar from "./components/Navbar";
+
 const App = () => {
 	return (
 		<div>
+			<Navbar />
 			<p className="w-[300px]">
 				Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque, facilis
 				hic reprehenderit eligendi, quae autem cupiditate consequatur
