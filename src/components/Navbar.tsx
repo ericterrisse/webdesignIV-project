@@ -14,7 +14,7 @@ const Navbar = () => {
 				<a className="font-afacad text-[28px]" href="#team">
 					Team
 				</a>
-				<a className="font-afacad text-[28px]" href="#mission">
+				<a className="font-afacad text-[28px]" href="#contact">
 					Contact
 				</a>
 			</nav>

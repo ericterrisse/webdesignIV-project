@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import MainPage from "./components/MainPage";
 import Project from "./components/Project";
 import Team from "./components/Team";
+import Contact from "./components/Contact";
 
 const App = () => {
 	useEffect(() => {
@@ -36,14 +37,14 @@ const App = () => {
 
 	return (
 		<div className="w-[70%] m-auto">
-			<div className="w-screen h-screen fixed flex items-center justify-around">
+			<div className="w-screen h-screen fixed flex items-center justify-around -z-10">
 				<div className="blob1 mr-[70rem]" />
 				<div className="blob2" />
 			</div>
 			<MainPage />
 			<Project />
 			<Team />
-			{/* <Mission /> */}
+			<Contact />
 		</div>
 	);
 };
