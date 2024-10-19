@@ -105,3 +105,123 @@
 .navbar a:hover::after {
   transform: scaleX(1);
 }
+
+.animate-hidden-top {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translatey(-300%);
+  transition: all 1.5s;
+}
+
+
+.animate-hidden-right {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(100%);
+  transition: all 1.5s;
+}
+
+.animate-hidden-left {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1.5s;
+}
+
+@media(prefers-reduced-motion) {
+
+  .animate-hidden-left,
+  .animate-hidden-right {
+    transition: none;
+  }
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+.f-image:nth-child(2) {
+  transition-delay: 200ms;
+}
+
+.blob1 {
+  position: absolute;
+  opacity: 0.5;
+  width: 400px;
+  aspect-ratio: 1/1;
+  animation: animate-1 10s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite alternate forwards;
+  filter: blur(40px);
+  z-index: -1;
+  background: linear-gradient(47deg,
+      rgba(255, 88, 139, 1) 21%,
+      rgb(0 164 173) 67%,
+      rgba(118, 74, 166, 1) 81%);
+
+  /*  Optional  */
+  box-shadow: inset 50px 50px 17px 0px #ff588b,
+    inset 100px 100px 17px 0px #66319f;
+}
+
+.blob2 {
+  position: absolute;
+  opacity: 0.5;
+  width: 400px;
+  aspect-ratio: 1/1;
+  animation: animate-2 10s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite alternate forwards;
+  filter: blur(40px);
+  z-index: -1;
+  background: linear-gradient(47deg,
+      rgba(255, 88, 139, 1) 21%,
+      rgb(0 164 173) 67%,
+      rgba(118, 74, 166, 1) 81%);
+
+  /*  Optional  */
+  box-shadow: inset 50px 50px 17px 0px #ff588b,
+    inset 100px 100px 17px 0px #66319f;
+}
+
+@keyframes animate-1 {
+  0% {
+    translate: 40% -25%;
+    border-radius: 60% 40% 30% 70% / 100% 85% 92% 74%;
+  }
+
+  50% {
+    translate: 0% 13%;
+    border-radius: 20% 71% 47% 70% / 81% 15% 22% 54%;
+    rotate: 41deg;
+    scale: 1.15;
+  }
+
+  100% {
+    translate: -45% 39%;
+    border-radius: 100% 75% 92% 74% / 60% 80% 30% 70%;
+    rotate: -60deg;
+    scale: 1.05;
+  }
+}
+
+@keyframes animate-2 {
+  0% {
+    translate: 30% -40%;
+    border-radius: 50% 60% 80% 50% / 70% 90% 80% 60%;
+    rotate: 0deg;
+    scale: 1;
+  }
+
+  50% {
+    translate: 20% 30%;
+    border-radius: 40% 80% 60% 50% / 75% 60% 80% 40%;
+    rotate: 60deg;
+    scale: 1.1;
+  }
+
+  100% {
+    translate: 35% 50%;
+    border-radius: 55% 65% 75% 85% / 65% 55% 95% 50%;
+    rotate: -40deg;
+    scale: 1.05;
+  }
+}
