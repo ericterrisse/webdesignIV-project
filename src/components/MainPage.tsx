@@ -1,5 +1,5 @@
 import { useState } from "react";
-import logo from "@/assets/images/logoBlue.svg";
+import logo from "@/assets/images/logo.svg";
 
 const MainPage = () => {
 	const [isStudents, setIsStudents] = useState(true);
@@ -15,7 +15,7 @@ const MainPage = () => {
 					alt="Xproof logo"
 					className="lg:h-[500px] h-[350px] animate-hidden-left main-imagetext"
 				/>
-				<h1 className="font-reemkufi absolute text-[2.5rem] top-[5rem] left-[12.5rem] lg:top-[7rem] lg:left-[18rem] lg:text-[3.5rem] leading-relaxed text-secondary animate-hidden-left main-imagetext">
+				<h1 className="font-reemkufi absolute text-[2.5rem] top-[5rem] left-[12.5rem] lg:top-[7rem] lg:left-[18rem] lg:text-[3.5rem] leading-relaxed animate-hidden-left main-imagetext">
 					is <br />
 					here <br />
 					to help
