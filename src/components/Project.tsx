@@ -8,18 +8,18 @@ const Project = () => {
 	return (
 		<div
 			id="project"
-			className="m-auto flex justify-between gap-[10rem] pt-[15vh]"
+			className="m-auto flex flex-col justify-between gap-[2rem] xl:gap-[10rem] lg:flex-row pt-[15vh]"
 		>
 			<div className="animate-hidden-left">
 				<div className="flex flex-col w-fit leading-[1]">
 					<h1 className="text-[5rem] text-fourth">Project</h1>
 					<h5 className="text-xl self-end text-fourth">by {dateShow}</h5>
 				</div>
-				<h4 className="italic font-montserrat">
+				<h4 className="italic font-montserrat text-[16px] lg:text-base ">
 					XProof is an AI-powered application designed to provide instant
 					feedback on handwritten solutions to math problems
 				</h4>
-				<p className="mt-10 text-2xl leading-loose">
+				<p className="mt-10 text-xl lg:text-2xl leading-normal xl:leading-loose">
 					The platform enables <span className="italic">teachers</span> to{" "}
 					<span className="text-fourth font-medium">
 						automate the correction process
@@ -41,7 +41,7 @@ const Project = () => {
 			</div>
 			<video
 				controls
-				className="max-h-[80vh] p-3 bg-black rounded-xl animate-hidden-right"
+				className="max-h-[80vh] p-3 bg-black rounded-xl animate-hidden-right w-fit m-auto lg:m-none"
 				src={videoDemo}
 			>
 				Your browser does not support this video display
