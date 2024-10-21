@@ -3,7 +3,7 @@ import { eric, gerard } from "@/assets/images";
 const Team = () => {
 	return (
 		<div id="team">
-			<h1 className="text-[5rem] text-third pt-[15vh] animate-hidden-left">
+			<h1 className="text-[5rem] text-third pt-[5rem] lg:pt-[15vh] animate-hidden-left">
 				Team
 			</h1>
 			<div className="flex flex-col items-center gap-10 w-full lg:flex-row">

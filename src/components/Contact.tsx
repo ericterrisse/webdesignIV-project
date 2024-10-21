@@ -3,7 +3,9 @@ import ContactForm from "./ContactForm";
 const Contact = () => {
 	return (
 		<div id="contact" className="animate-hidden-left">
-			<h1 className="text-[5rem] text-primary pt-[15vh]">Contact</h1>
+			<h1 className="text-[5rem] text-primary pt-[5rem] lg:pt-[15vh]">
+				Contact
+			</h1>
 			<div className="flex justify-between gap-10 pt-10">
 				<ContactForm />
 				<p className="text-2xl leading-loose hidden lg:block">

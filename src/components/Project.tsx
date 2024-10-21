@@ -8,7 +8,7 @@ const Project = () => {
 	return (
 		<div
 			id="project"
-			className="m-auto flex flex-col justify-between gap-[2rem] xl:gap-[10rem] lg:flex-row pt-[15vh]"
+			className="m-auto flex flex-col justify-between gap-[2rem] xl:gap-[10rem] lg:flex-row pt-[5rem] lg:pt-[15vh]"
 		>
 			<div className="animate-hidden-left">
 				<div className="flex flex-col w-fit leading-[1]">
