@@ -6,24 +6,22 @@ const Team = () => {
 			<h1 className="text-[5rem] text-third pt-[15vh] animate-hidden-left">
 				Team
 			</h1>
-			<div className="flex gap-10 w-full">
-				<div className="flex flex-col items-center gap-2 shadow bg-[#5fd3f7]/50 p-8 rounded-xl animate-hidden-left f-image">
-					<img
-						src={gerard}
-						alt="Gerard Solanes Hernandez"
-						className="h-[400px] w-auto"
-					/>
-					<h4>Gerard Solanes Hernandez</h4>
-					<p className="text-center">Co-founder & CEO</p>
-					<p className="text-center">Physicist, teacher and developer</p>
+			<div className="flex flex-col items-center gap-10 w-full lg:flex-row">
+				<div className="flex gap-10 flex-1 flex-col md:flex-row">
+					<div className="flex flex-1 flex-col items-center gap-2 max-w-[400px] w-auto shadow bg-[#5fd3f7]/50 p-8 rounded-xl animate-hidden-left f-image">
+						<img src={gerard} alt="Gerard Solanes Hernandez" className="" />
+						<h4>Gerard Solanes Hernandez</h4>
+						<p className="text-center">Co-founder & CEO</p>
+						<p className="text-center">Physicist, teacher and developer</p>
+					</div>
+					<div className="flex flex-1 flex-col items-center gap-2 max-w-[400px] w-auto shadow bg-[#5fd3f7]/50 p-8 rounded-xl animate-hidden-left f-image">
+						<img src={eric} alt="Èric Terrisse Bordas" className="w-full" />
+						<h4>Èric Terrisse Bordas</h4>
+						<p>Co-founder & CTO</p>
+						<p>Computer Scientist and developer</p>
+					</div>
 				</div>
-				<div className="flex flex-col items-center gap-2 shadow bg-[#5fd3f7]/50 p-8 rounded-xl animate-hidden-left f-image">
-					<img src={eric} alt="Èric Terrisse Bordas" className="h-[400px]" />
-					<h4>Èric Terrisse Bordas</h4>
-					<p>Co-founder & CTO</p>
-					<p>Computer Scientist and developer</p>
-				</div>
-				<p className="flex-1 text-xl leading-loose animate-hidden animate-hidden-right">
+				<p className="text-base leading-loose animate-hidden animate-hidden-right lg:max-w-[400px] lg:leading-loose md:text-xl">
 					Gerard and Èric first met six years ago and have collaborated on
 					various projects ever since. They have been integral members of larger
 					teams, participating in numerous projects and hackathons, including
