@@ -36,15 +36,17 @@ const App = () => {
 	}, []); // Empty dependency array to run only once when the component mounts
 
 	return (
-		<div className="w-[70%] m-auto">
-			<div className="w-screen h-screen fixed flex items-center justify-around -z-10">
-				<div className="blob1 mr-[70rem]" />
-				<div className="blob2" />
+		<div className="w-full overflow-x-hidden">
+			<div className="w-[95%] 2xl:w-[70%]  m-auto">
+				<div className="w-screen h-screen fixed flex items-center justify-around -z-10">
+					<div className="blob1 mr-[70rem]" />
+					<div className="blob2" />
+				</div>
+				<MainPage />
+				<Project />
+				<Team />
+				<Contact />
 			</div>
-			<MainPage />
-			<Project />
-			<Team />
-			<Contact />
 		</div>
 	);
 };

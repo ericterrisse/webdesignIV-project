@@ -146,6 +146,10 @@
   transition-delay: 200ms;
 }
 
+.main-imagetext:nth-child(2) {
+  transition-delay: 200ms;
+}
+
 .blob1 {
   position: absolute;
   opacity: 0.5;
