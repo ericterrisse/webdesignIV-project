@@ -20,7 +20,7 @@ const ContactForm = () => {
 			onSubmit={onSubmit}
 			action="https://formsubmit.co/3aab0d48daa54a91923451c35db00eab"
 			method="POST"
-			className="flex flex-col gap-10 w-[50%] mb-[15vh] p-10 bg-white/20 rounded-xl"
+			className="flex flex-col gap-10 w-full lg:w-[50%] mb-[15vh] p-10 bg-white/20 rounded-xl"
 		>
 			<input
 				type="text"
