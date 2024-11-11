@@ -7,7 +7,6 @@ const Navbar = () => {
 	return (
 		<div className="h-[10vh] fixed w-full flex justify-between items-center bg-white/50 backdrop-blur-lg z-10">
 			<a className="flex gap-3 items-center ml-5" href="#main">
-				<img src={logo} className="h-12 w-12" />
 				<h1 className="font-bold">XProof</h1>
 			</a>
 			<div
@@ -17,28 +16,22 @@ const Navbar = () => {
 				<GiHamburgerMenu size={30} />
 				{showMenu && (
 					<nav className="flex flex-col gap-2 absolute right-0 bg-white p-3">
-						<a className="font-afacad text-[28px]" href="#project">
+						<a className="text-[28px]" href="#project">
 							Project
 						</a>
-						<a className="font-afacad text-[28px]" href="#team">
+						<a className="text-[28px]" href="#team">
 							Team
 						</a>
-						<a className="font-afacad text-[28px]" href="#contact">
+						<a className="text-[28px]" href="#contact">
 							Contact
 						</a>
 					</nav>
 				)}
 			</div>
-			<nav className="hidden sm:flex gap-16 mr-10 items-center navbar">
-				<a className="font-afacad text-[28px]" href="#project">
-					Project
-				</a>
-				<a className="font-afacad text-[28px]" href="#team">
-					Team
-				</a>
-				<a className="font-afacad text-[28px]" href="#contact">
-					Contact
-				</a>
+			<nav className="hidden sm:flex gap-16 mr-10 items-center">
+				<a className="text-[28px]">Project</a>
+				<a className="text-[28px]">Team</a>
+				<a className="text-[28px]">Contact</a>
 			</nav>
 		</div>
 	);

@@ -1,18 +1,12 @@
-import ContactForm from "./ContactForm";
-
 const Contact = () => {
 	return (
-		<div id="contact" className="animate-hidden-left">
-			<h1 className="text-[5rem] text-primary pt-[5rem] lg:pt-[15vh]">
-				Contact
-			</h1>
+		<div id="contact">
+			<h1 className="text-[5rem] pt-[5rem] lg:pt-[15vh]">Contact</h1>
 			<div className="flex justify-between gap-10 pt-10">
-				<ContactForm />
+				{/* <ContactForm /> */}
+				<div className="w-[900px] bg-gray-400 h-[50vh] mb-10">Contact form</div>
 				<p className="text-2xl leading-loose hidden lg:block">
-					We&apos;d love to hear from you! Whether you&apos;re interested in
-					gaining early access to XProof or just have a few questions,
-					we&apos;re all ears. Fill out our contact form to get the conversation
-					started.
+					Copy for the contact Contact form form
 				</p>
 			</div>
 		</div>
