@@ -1,4 +1,3 @@
-import logo from "@/assets/images/logo.svg";
 import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 
